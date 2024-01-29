@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <script src="JS/logic.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navigation m-auto max-width-1">
+        <div class="nav">
+            <a title="Shefali Chopra" href="index.html"><img src="images/logo.png" alt="Shefali Chopra"></a>
+            <div class="nav-mid">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/project.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="nav-end">
+                <div class="social-icons">
+                    <a href="https://github.com/ishefalichopra"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ishefalichopra/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/ishefalichopra"><i class="fa-brands fa-square-twitter"></i></a>
+                    <div class="x">
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </div>
+
+
+                    <div class="smalli">
+                        <div class="menu"><i class="fa-solid fa-bars" onclick="openmenu()"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+
+
+        <div class="heading">
+            <button>
+                <h1>Projects</h1>
+            </button>
+        </div>
+
+
+        <div id="projects">
+            <div id="E-com">
+                <a href="https://github.com/ishefalichopra/E-Commerce-Project">
+                    <h2>E-Commerce Website</h2>
+                </a>
+                <img src="images/E-com.jpg" alt="E-Commerce">
+                <p>The objective of the project was to create a primary E-Commerce Webpage to showcase items using a
+                    fake API.
+                    I used HTML, CSS, and JavaScript to create this project. I used a fake API to get the
+                    product details and a delete button for the authorized user to delete and add products.
+                    Tools & Technologies used in developing the project were HTML, CSS, JavaScript, VS Code, and GitHub.
+                </p>
+            </div>
+
+            <div id="mba">
+                <a href="https://github.com/ishefalichopra/moviebokkingapplication">
+                    <h2>Movie Booking App</h2>
+                </a>
+                <img src="images/mba.jpg" alt="Movie Booking App">
+                <p>The objective was to create a movie booking application using React JS.
+                    I created this project using HTML, CSS, JSX, and React JS. I used Postman to get the API
+                    for movie details and also used a delete button for the authorized user to delete movies
+                    and add them.
+                    Tools & Technologies used in developing the project were HTML, CSS, JavaScript, JSX, React JS,
+                    Postman, VS Code, and GitHub</p>
+            </div>
+
+            <div id="rbt">
+                <a href="https://github.com/ishefalichopra/responsiveblog-template">
+                    <h2>Responsive Blog Template</h2>
+                </a>
+                <img src="images/rbt.jpg" alt="Responsive Blog Template">
+                <p>The objective was to create a responsive blog template to showcase blogs.
+                    I used basic HTML, CSS, and JavaScript to create this project.
+                    Tools & Technologies used in the project were HTML, CSS, JavaScript, Bootstrap, VS Code, and GitHub
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+
+    <footer>
+        <p>© 2023 Shefali Chopra</p>
+    </footer>
+    <script>
+        function openmenu() {
+            var socialIcons = document.getElementsByClassName("social-icons");
+            var menuElements = document.getElementsByClassName("menu");
+            if (socialIcons.length > 0) {
+                socialIcons[0].style.right = "-25px";
+            }
+            if (menuElements.length > 0) {
+                menuElements[0].style.display = "none";
+            }
+        }
+
+        function closemenu() {
+            var menuElements = document.getElementsByClassName("menu");
+            var socialIcons = document.getElementsByClassName("social-icons");
+            if (socialIcons.length > 0) {
+                socialIcons[0].style.right = "-150px";
+            }
+            if (menuElements.length > 0) {
+                menuElements[0].style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

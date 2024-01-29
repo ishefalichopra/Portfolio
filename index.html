@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <script src="JS/logic.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navigation m-auto max-width-1">
+        <div class="nav">
+            <a title="Shefali Chopra" href="index.html"><img src="images/logo.png" alt="Shefali Chopra"></a>
+            <div class="nav-mid">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/project.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="nav-end">
+                <div class="social-icons">
+                    
+                        <a href="https://github.com/ishefalichopra"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ishefalichopra/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/ishefalichopra"><i class="fa-brands fa-square-twitter"></i></a>
+                        <div class="x">
+                            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                        </div>
+                   
+
+                    <div class="smalli">
+                        <div class="menu"><i class="fa-solid fa-bars" onclick="openmenu()"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+
+            <h1 class="main-heading">Hi! I am Shefali Chopra. Welcome to my Portfolio Website.</h1>
+            <p class="intro">I am a dedicated student in pursuit of a Bachelor's degree in Computer Science and
+                Engineering, driven by a passion to infuse a diverse set of skills into the ever-evolving world of
+                technology. My enthusiasm and unwavering commitment to solving real-time challenges propel me forward on
+                this path. I am a relentless learner with a deep well of interpersonal skills, effective communication,
+                and an inherent adaptability, all of which I am eager to employ as I seek opportunities to learn and
+                explore.</p>
+            <div class="btn">
+                <button class="btn1"><a href="mailto:shefalichopra900@gmail.com">Contact Me</a></button>
+                <button class="btn2"><a href="images/shefali-resume1.pdf" download>Resume</a></button>
+            </div>
+
+        </div>
+        <img src="images/Shefali.jpg" alt="Shefali Chopra" class="profile-img">
+    </main>
+
+
+    <footer>
+        <p>© 2023 Shefali Chopra</p>
+    </footer>
+    <script>
+        function openmenu() {
+            var socialIcons = document.getElementsByClassName("social-icons");
+            var menuElements = document.getElementsByClassName("menu");
+            if (socialIcons.length > 0) {
+                socialIcons[0].style.right = "-25px";
+            }
+            if (menuElements.length > 0) {
+                menuElements[0].style.display = "none";
+            }
+        }
+
+        function closemenu() {
+            var menuElements = document.getElementsByClassName("menu");
+            var socialIcons = document.getElementsByClassName("social-icons");
+            if (socialIcons.length > 0) {
+                socialIcons[0].style.right = "-150px";
+            }
+            if (menuElements.length > 0) {
+                menuElements[0].style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
